@@ -114,12 +114,10 @@ THWANI_API_KEY = 'rRQ26GcsZzoEhbrP2HZvLYDbn9C9et'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 import os
-STATIC_ROOT = "/paymentGateway_thawani/static/"
 
-# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, "static"),
 ]
 
 # Default primary key field type

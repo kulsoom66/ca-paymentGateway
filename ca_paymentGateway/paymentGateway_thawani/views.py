@@ -115,7 +115,7 @@ def create_checkout_session(registration):
             {
                 "name": registration.course.name,
                 "quantity": 1,
-                "unit_amount": int(registration.course.price * 100)  # Assuming price is in OMR, convert to Baisa
+                "unit_amount": int(registration.course.price * 1000)  # Assuming price is in OMR, convert to Baisa
             }
         ],
         "success_url": 'http://127.0.0.1:7000/succeed',  # Replace with your actual success URL
